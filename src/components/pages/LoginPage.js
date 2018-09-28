@@ -14,7 +14,7 @@ class LoginPage extends React.Component {
                 <LoginForm submit={this.submit} />
             </div>
         );
-    }
-}
+    };
+};
 
 export default LoginPage;

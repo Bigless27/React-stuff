@@ -1,8 +1,8 @@
 import React from 'react';
 import {Form, Button} from "semantic-ui-react"
 import Validator from "validator";
-import InlineError from "../messages/InlineError";
 import PropTypes from "prop-types";
+import InlineError from "../messages/InlineError";
 
 class LoginForm extends React.Component {
     state = {
