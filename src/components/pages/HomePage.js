@@ -5,12 +5,17 @@ import { connect } from 'react-redux';
 import NewPage from "./NewPage";
 import * as actions from '../../actions/auth';
 
-const HomePage = ({isAuthenticated, logout}) => (
+const HomePage = ({ isAuthenticated, logout }) => (
     <div>
         <h1>Home Page</h1>
-        {isAuthenticated ?  <button onClick={() => logout()}>Logout</button> : <Link to="/login">Login</Link>}
-        <NewPage message="this is the cool new message"/>
-    </div>
+        {isAuthenticated ? <button onClick={() => logout()}>Logout</button>
+            : (
+                <div>
+                    <Link to="/login">Login</Link> or <Link to="/signup">Sign Up</Link>
+                </div>
+            )
+        }
+    </div >
 );
 
 HomePage.propTypes = {
