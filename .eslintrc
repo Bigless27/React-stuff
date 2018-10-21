@@ -16,7 +16,9 @@
     },
     "rules": {
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-      "import/prefer-default-export": "off"
+      "import/prefer-default-export": "off",
+      "react/destructuring-assignment": [false],
+      "jsx-a11y/label-has-associated-control": [false]
 
     }
   }
