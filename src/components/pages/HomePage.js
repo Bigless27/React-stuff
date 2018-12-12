@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
-import NewPage from "./NewPage";
 import * as actions from '../../actions/auth';
 
 const HomePage = ({ isAuthenticated, logout }) => (

@@ -10,9 +10,11 @@ import GuestRoute from './components/routes/GuestRoute';
 import ForgotPasswordPage from './components/pages/ForgotPasswordPage';
 import ConfirmationPage from "./components/pages/ConfirmationPage";
 import ResetPasswordPage from "./components/pages/ResetPasswordPage";
+import TopNavigation from "./components/navigation/TopNavigation";
 
 const App = ({ location }) => (
   <div className="ui container">
+    <TopNavigation />
     <Route location={location} path="/" exact component={HomePage} />
     <Route location={location} path="/confirmation/:token" exact component={ConfirmationPage} />
     <GuestRoute location={location} path="/login" component={LoginPage} />
